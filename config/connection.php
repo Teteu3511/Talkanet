@@ -1,15 +1,25 @@
 <?php
 
-    $dbserver = 'localhost';
-    $dbuname = 'root';
-    $dbpass = '';
-    $dbname = 'tcc-site-de-conversa';
+    $host = "localhost";
+    $dbname = "agenda";
+    $user = "root";
+    $pass = "";
 
-    $db = mysqli_connect($dbserver, $dbuname, $dbpass, $dbname);
+    try {
 
-    if($db = false) {
+        $conn = new PDO("mysql:host=$host;dbname=$dbname", $user, $pass);
 
-        die("Error: connection error. " . mysqli_connect_error());
+        // Error Mode
+
+        $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+    } catch(PDOException $e) {
+
+        // Connection Error
+
+        $error = $e->getMessage();
+
+        echo "Erro: $error";
 
     }
 
