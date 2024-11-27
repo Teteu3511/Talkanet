@@ -31,5 +31,3 @@
 		error_log("Erro: " . $e->getMessage());
 		exit('Um erro ocorreu, tente novamente mais tarde.');
 	}
-
-?>
