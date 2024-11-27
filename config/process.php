@@ -11,6 +11,6 @@
     $stmt->exectute();
 
     $contacts = $stmt->fetchAll();
-    gyufyvu
+    
 
 ?>
