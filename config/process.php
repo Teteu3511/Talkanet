@@ -5,11 +5,13 @@
     include_once("connection.php");
     include_once("url.php");
 
+    $posts = [];
+
     $query = "SELECT * FROM post";
 
     $stmt = $conn->prepare($query);
-    $stmt->exectute();
+    $stmt->execute();
 
-    $contacts = $stmt->fetchAll();
+    $posts = $stmt->fetchAll();
 
 ?>
