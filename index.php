@@ -24,7 +24,6 @@
 
                             <td scope="row"><?= $post["username"] ?></td>
                             <td scope="row"><?= $post["content"] ?></td>
-                            <i class="fa-regular fa-thumbs-up"></i>
 
                         </tr>
 
