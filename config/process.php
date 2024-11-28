@@ -13,6 +13,5 @@
     $stmt->execute();
 
     $posts = $stmt->fetchAll();
-    
 
 ?>
