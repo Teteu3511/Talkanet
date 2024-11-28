@@ -25,3 +25,18 @@ footer {
     border-top: 1px solid rgb(73, 80, 87);
 
 }
+
+#post-table {
+
+
+    margin: 0 auto;
+    height: 100px;
+    font-size: 18px;
+}
+
+.nav nav-pills {
+
+    position: relative;
+    width: 940px;
+
+}
