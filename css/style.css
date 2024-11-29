@@ -33,6 +33,7 @@ main {
 footer {
 
     min-height: 50px;
+    font-size: 18px;
     padding: 20px;
     text-align: center;
     border-top: 2px solid rgb(0, 191, 99);
