@@ -22,8 +22,8 @@
 
                         <tr>
 
-                            <td scope="row"><?= $post["username"] ?></td>
-                            <td scope="row"><?= $post["content"] ?></td>
+                            <td scope="row" class="uname"><?= $post["username"] ?></td>
+                            <td scope="row" class="content"><?= $post["content"] ?></td>
 
                         </tr>
 

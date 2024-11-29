@@ -12,10 +12,11 @@
 #header {
 
     min-height: 50px;
-    border-right: 1px solid rgb(73, 80, 87);
-    border-left: 1px solid rgb(73, 80, 87);
-    border-bottom: 1px solid rgb(73, 80, 87);
+    border-right: 2px solid rgb(0, 191, 99);
+    border-left: 2px solid rgb(0, 191, 99);
+    border-bottom: 2px solid rgb(0, 191, 99);
     border-radius: 12px;
+    justify-content: center;
     
 }
 
@@ -31,7 +32,8 @@ footer {
     min-height: 50px;
     padding: 20px;
     text-align: center;
-    border-top: 1px solid rgb(73, 80, 87);
+    border-top: 1px solid rgb(0, 191, 99);
+    color: #FFFFFF
 
 }
 
@@ -55,11 +57,29 @@ footer {
 
 .search-container {
 
-    margin-right: 30px;
-
+    height: 30px;
+    margin: auto 30px;
+    border-radius: 12px;
+    
 }
 
 #navbar a {
 
-    color: #7e2d97;
+    color: rgb(0, 191, 99);
 }
+
+img {
+
+    
+    margin: 0 30px;
+}
+
+.nav-item {
+
+    height: 30px;
+    margin: auto 5px
+
+
+}
+
+.

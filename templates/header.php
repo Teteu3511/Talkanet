@@ -33,14 +33,14 @@
 		<section class="page-control">
 
 			<section class="header-wrapper">
-				<header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom" id="header">
+				<header class="d-flex flex-wrap justify-content-center py-3 mb-4" id="header">
 					<a href="index.php" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-						<span class="fs-4" id="header-title">Talkanet</span>
+						<img src="img/Talka.png" width="200px"></img>
 					</a>
 					
 					<div class="search-container">
-						<form class="w-100 me-5" role="search">
-							<input type="search" class="form-control"  id="search-input" name="search-input" placeholder="Pesquisar..." aria-label="Search">
+						<form class="w-100 me-4" role="search">
+							<input type="search" class="form-control"  id="search-input" name="query" placeholder="Pesquisar..." aria-label="Search">
 						</form>
 					</div>
 
