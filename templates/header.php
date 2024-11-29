@@ -34,9 +34,11 @@
 
 			<section class="header-wrapper">
 				<header class="d-flex flex-wrap justify-content-center py-3 mb-4" id="header">
-					<a href="index.php" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-						<img src="img/Talka.png" width="200px"></img>
-					</a>
+					<div class="logo">
+						<a href="index.php" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+							<img src="img/Talka.png" width="200px"></img>
+						</a>
+					</div>
 					
 					<div class="search-container">
 						<form class="w-100 me-4" role="search">
@@ -45,10 +47,10 @@
 					</div>
 
 					<ul class="nav nav-pills" id="navbar">
-						<li class="nav-item"><a href="index.php" class="nav-link">Home</a></li>
-						<li class="nav-item"><a href="add_post.php" class="nav-link">Postar</a></li>
-						<li class="nav-item"><a href="help.php" class="nav-link">Ajuda</a></li>
-						<li class="nav-item"><a href="aboutus.php" class="nav-link">Sobre nós</a></li>
+						<li class="nav-item"><a href="index.php" class="nav-link"><span class="text"><i class="fa-solid fa-house"></i>Home</span></a></li>
+						<li class="nav-item"><a href="add_post.php" class="nav-link"><span class="text"><i class="fa-solid fa-paper-plane"></i>Postar</span></a></li>
+						<li class="nav-item"><a href="help.php" class="nav-link"><span class="text"><i class="fa-solid fa-circle-info"></i>Ajuda</span></a></li>
+						<li class="nav-item"><a href="aboutus.php" class="nav-link"><span class="text"><i class="fa-solid fa-user-group"></i>Sobre nós</span></a></li>
 					</ul>
 				
 				</header>
