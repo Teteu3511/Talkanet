@@ -1,34 +1,78 @@
 <?php
 
-    session_start();
-    $_SESSION;
+    include_once("templates/header.php");
 
 ?>
 
-<!DOCTYPE html>
-<html lang="pt-BR">
+    <main>
 
-	<head>
+        <?php if(isset($printMsg) && $printMsg != ''): ?>
 
-		<meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Index -Talkanet</title>
-        <link rel="stylesheet" href="css/reset.css">
-		<link rel="stylesheet" href="css/style.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <p id="msg"><?php $printMsg ?></p>
 
-	</head>
+        <?php endif; ?>
 
-	<body>
+        <?php if(count($posts) > 0): ?>
 
-        <a href="logout.php">Logout</a>
-        <h1>This is the index page</h1>
+            <table id="post-table">
 
-        <br>
+                <tbody>
 
-        Hello, Username.
+                    <?php foreach ($posts as $post): ?>
 
-    </body>
+                        <tr>
 
-</html>
+                            <td scope="row" class="uname"><?= $post["username"] ?></td>
+                            <td scope="row" class="content"><?= $post["content"] ?></td>
+
+                        </tr>
+
+                    <?php endforeach; ?>
+
+                </tbody>
+
+            </table>
+
+        <?php else: ?>
+
+            <div class="empty-list-container">
+
+                <p id="empty-list-text">Tudo vazio por aqui, Seja o primeiro a postar algo.</p>
+
+            </div>
+
+        <?php endif; ?>
+
+        <div class="send-post-container">
+
+            <form id="send-post" action="<?php $BASE_URL ?>config/process.php" method="POST">
+
+                <input type="hidden" name="type" value="create">
+
+                <div class="send-section">
+
+                    <label for="username" class="send-label">Nome de usuário:</label>
+                    <input class="send-box" id="username" name="username" placeholder="Insira seu nome de usuário" required>
+
+                </div>
+
+                <div class="send-section">
+
+                    <label for="content" class="send-label">Escreva sua postagem:</label>
+                    <input class="send-box" id="content" name="content" placeholder="Escreva sua postagem" required>
+
+                </div>
+
+                <button type="submit" id="send-submit"><i class="fa-solid fa-paper-plane"></i></button>
+
+            </form>
+
+        </div>
+
+    </main>
+
+<?php
+
+    include_once("templates/footer.php");
+
+?>
