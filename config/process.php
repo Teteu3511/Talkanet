@@ -44,7 +44,7 @@
 
         // Redirect to Home
 
-        header("location:" . $BASE_URL . "../chat.php");
+        header("location:" . $BASE_URL . "../index.php");
 
     }
 
