@@ -43,7 +43,7 @@
 					
 					<div class="search-container">
 						<form class="w-100 me-4" role="search">
-							<input type="search" class="form-control"  id="search-input" name="query" placeholder="Pesquisar..." aria-label="Search">
+							<input type="search" class="form-control"  id="search-input" name="search" placeholder="Pesquisar..." aria-label="Search">
 						</form>
 					</div>
 

@@ -171,13 +171,19 @@ main {
 
 #post-content {
 
-
+    font-size: 17px;
 
 }
 
 .empty-list-container {
 
-    margin: 0 auto;
+    margin: 20px auto;
+    min-height: 80vh;
+    width: 70%;
+    height: max-content;
+    background-color: rgb(33, 37, 41);
+    border: 2px solid rgb(0, 191, 99);
+    font-size: 18px;
 
 }
 
