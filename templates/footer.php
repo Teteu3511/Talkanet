@@ -3,7 +3,7 @@
 <div class="footer-container">
     <footer id="footer">
         <div class="container">
-            <span id="footer-content">Version 0.8 &copy; Copyright Talkanet - MatheusMSL, KaikeAR - 2024</span>
+            <span id="footer-content">Version 1.0 &copy; Copyright Talkanet - MatheusMSL, KaikeAR - 2024</span>
         </div>
     </footer>
 </div>

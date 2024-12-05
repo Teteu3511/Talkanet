@@ -68,7 +68,7 @@ main {
 
     width: 65%;
     max-height: max-content;
-    margin: 0 auto;
+    margin: 0 auto 15px auto;
 
 }
 
@@ -137,9 +137,7 @@ main {
     width: 70%;
     height: max-content;
     background-color: rgb(33, 37, 41);
-    border-top: 2px solid rgb(0, 191, 99);
-    border-right: 2px solid rgb(0, 191, 99);
-    border-left: 2px solid rgb(0, 191, 99);
+    border: 2px solid rgb(0, 191, 99);
     font-size: 18px;
 
 }
