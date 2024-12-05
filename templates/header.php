@@ -34,7 +34,7 @@
 		<section class="page-control">
 
 			<section class="header-wrapper">
-				<header class="d-flex flex-wrap justify-content-center py-3 mb-4" id="header">
+				<header class="d-flex flex-wrap justify-content-center py-3" id="header">
 					<div class="logo">
 						<a href="index.php" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
 							<img src="img/Talka.png" width="200px"></img>

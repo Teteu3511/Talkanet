@@ -11,7 +11,7 @@
 
     if (!empty($data)) {
 
-    // Create contact
+    // Create post
 
         if ($data["type"] === "create") {
 
