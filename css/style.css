@@ -148,6 +148,12 @@ main {
 
 }
 
+#posts-container a{
+
+    flex-direction: column;
+
+}
+
 .empty-list-container {
 
     margin: 0 auto;

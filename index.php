@@ -47,7 +47,6 @@
                             
                             <?php foreach ($posts as $post): ?>
 
-                                
                                 <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3">
 
                                     <img src="<?= $BASE_URL ?>img/profile.png" alt="Perfil" width="32" height="32" class="rounded-circle flex-shrink-0">
