@@ -184,31 +184,3 @@ footer {
     color: #FFFFFF;
 
 }
-
-.coracao {
-    font-size: 50px;
-    cursor: pointer;
-    display: inline-block;
-}
-
-.coracao i {
-    display: none;
-}
-
-.coracao .far.fa-heart {
-    display: inline-block;
-    color: #bbb;  /* Cor do coração vazio */
-}
-
-.coracao .fas.fa-heart {
-    display: none;
-    color: #e0245e;  /* Cor do coração preenchido (rosa) */
-}
-
-.coracao.clicado .fas.fa-heart {
-    display: inline-block;
-}
-
-.coracao.clicado .far.fa-heart {
-    display: none;
-}

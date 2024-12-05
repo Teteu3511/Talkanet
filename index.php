@@ -56,15 +56,6 @@
 
                                 </a>
 
-                                <div class="coracao" id="coracao">
-        <i class="far fa-heart"></i> <!-- Coracao vazio -->
-        <i class="fas fa-heart"></i> <!-- Coracao preenchido -->
-    </div>
-
-    <script type="text/javascript">document.getElementById("coracao").addEventListener("click", function() {
-    this.classList.toggle("clicado");
-});</script>
-
                             <?php endforeach; ?>
 
                         </div>
