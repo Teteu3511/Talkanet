@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 28/11/2024 às 13:41
+-- Tempo de geração: 05/12/2024 às 15:04
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.2.12
 
@@ -29,17 +29,9 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `post` (
   `id` int(10) UNSIGNED NOT NULL,
-  `username` varchar(100) DEFAULT NULL,
-  `content` varchar(400) DEFAULT NULL
+  `username` varchar(50) DEFAULT NULL,
+  `content` varchar(500) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Despejando dados para a tabela `post`
---
-
-INSERT INTO `post` (`id`, `username`, `content`) VALUES
-(2, 'KarekaLinds', 'Procuro hambúrgueres de siri.'),
-(3, 'Kleiton', 'Algúem pra me dar o CPT RONC na promo?');
 
 --
 -- Índices para tabelas despejadas
@@ -59,7 +51,7 @@ ALTER TABLE `post`
 -- AUTO_INCREMENT de tabela `post`
 --
 ALTER TABLE `post`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
