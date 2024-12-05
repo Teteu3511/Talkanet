@@ -66,9 +66,69 @@
 
 main {
 
-    width: 70%;
+    width: 65%;
     max-height: max-content;
     margin: 0 auto;
+
+}
+
+.send-post-container {
+
+    margin: 0 auto;
+    width: 70%;
+    color: #FFFFFF;
+
+}
+
+.send-section {
+
+    border: 2px solid rgb(0, 191, 99);
+    margin: 15px auto;
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px;
+
+}
+
+.send-section #user-label {
+
+
+    font-size: 20px;
+
+}
+
+.send-label {
+
+    margin-right: 20px;
+
+}
+
+.send-box {
+
+    width: 60%;
+    padding: 5px;
+    background-color: rgb(33, 37, 41);
+    border: 1px solid rgb(0, 191, 99);
+    border-radius: 10px;
+    margin-right: 20px;
+
+}
+
+#send-submit {
+
+    background: none;
+    color: rgb(0, 191, 99);
+    border: 1px solid rgb(0, 191, 99);
+    border-radius: 10px;
+    width: 100px;
+    padding: 3px;
+
+}
+
+#send-submit:hover {
+
+    background-color: rgb(33, 37, 41);
+    transition: 0.3s;
 
 }
 
@@ -101,23 +161,6 @@ main {
     font-size: 18px;
     text-align: center;
     color: #FFFFFF;
-
-}
-
-.send-post-container {
-
-    margin: 0 auto;
-    width: 50%;
-    color: #FFFFFF;
-
-}
-
-.send-section {
-
-    border: 2px solid rgb(0, 191, 99);
-    border-radius: 5px;
-    padding: 10px;
-    margin-bottom: 10px;
 
 }
 

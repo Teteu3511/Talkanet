@@ -22,19 +22,18 @@
 
                 <div class="send-section">
 
-                    <label for="uname" class="send-label">Nome de usuário:</label>
-                    <input class="send-box" id="uname" name="username" placeholder="Insira seu nome de usuário" required>
+                    <label for="uname" class="send-label" id="user-label">Nome de usuário:</label>
+                    <input class="send-box" id="uname" name="username" placeholder="Insira seu nome de usuário" required autocomplete="username">
 
                 </div>
 
                 <div class="send-section">
 
                     <label for="ctnt" class="send-label">Escreva sua postagem:</label>
-                    <input class="send-box" id="ctnt" name="content" placeholder="Escreva sua postagem" required>
+                    <input class="send-box" id="ctnt" name="content" placeholder="Escreva sua postagem" required autocomplete="off">
+                    <button type="submit" id="send-submit"><i class="fa-solid fa-paper-plane"></i></button>
 
                 </div>
-
-                <button type="submit" id="send-submit"><i class="fa-solid fa-paper-plane"></i></button>
 
             </form>
 
