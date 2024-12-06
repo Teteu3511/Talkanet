@@ -2,7 +2,7 @@
 
     min-height: 100vh;
     margin: 0;
-    background-color: #080707;
+    background-color: rgb(9, 11, 10);
 
 }
 
@@ -15,7 +15,8 @@
 #header {
 
     min-height: 50px;
-    border-bottom: 2px solid rgb(0, 191, 99);
+    border-bottom: 2px solid rgb(0, 190, 47);
+    background-color: rgb(9, 11, 10);
     font-size: 21px;
 
 }
@@ -28,16 +29,16 @@
 
 .search-container {
 
-    height: 30px;
     margin: auto 30px;
-    border-radius: 12px;
+    border: 2px solid rgb(0, 190, 47);
+    border-radius: 10px;
     width: 500px;
 
 }
 
 #navbar a {
 
-    color: rgb(0, 191, 99);
+    color: rgb(0, 190, 47);
 }
 
 .nav-item {
@@ -60,7 +61,7 @@
 
 .text:hover{
 
-    border-bottom: 2px solid rgb(0, 191, 99);
+    border-bottom: 2px solid rgb(0, 190, 47);
 
 }
 
@@ -82,7 +83,7 @@ main {
 
 .send-section {
 
-    border: 2px solid rgb(0, 191, 99);
+    border: 2px solid rgb(0, 190, 47);
     border-top-left-radius: 15px;
     border-bottom-right-radius: 15px;
     margin: 15px auto;
@@ -108,8 +109,8 @@ main {
 
     width: 60%;
     padding: 5px;
-    background-color: rgb(33, 37, 41);
-    border: 1px solid rgb(0, 191, 99);
+    background-color: rgb(9, 11, 10);
+    border: 1px solid rgb(0, 190, 47);
     border-radius: 10px;
     margin-right: 20px;
 
@@ -118,8 +119,8 @@ main {
 #send-submit {
 
     background: none;
-    color: rgb(0, 191, 99);
-    border: 1px solid rgb(0, 191, 99);
+    color: rgb(0, 190, 47);
+    border: 1px solid rgb(0, 190, 47);
     border-radius: 10px;
     width: 100px;
     padding: 3px;
@@ -129,7 +130,7 @@ main {
 #send-submit:hover {
 
     background-color: rgb(33, 37, 41);
-    transition: 0.3s;
+    transition: 0.2s;
 
 }
 
@@ -138,7 +139,7 @@ main {
     width: 70%;
     height: max-content;
     background-color: rgb(33, 37, 41);
-    border: 2px solid rgb(0, 191, 99);
+    border: 2px solid rgb(0, 190, 47);
     font-size: 18px;
 
 }
@@ -152,6 +153,7 @@ main {
 #posts-container a{
 
     flex-direction: column;
+    border-bottom: 2px solid rgb(0, 190, 47);
 
 }
 
@@ -181,8 +183,8 @@ main {
     min-height: 80vh;
     width: 70%;
     height: max-content;
-    background-color: rgb(33, 37, 41);
-    border: 2px solid rgb(0, 191, 99);
+    background-color: rgb(9, 11, 10);
+    border: 2px solid rgb(0, 190, 47);
     font-size: 18px;
 
 }
@@ -207,7 +209,7 @@ footer {
     font-size: 18px;
     padding: 20px;
     text-align: center;
-    border-top: 2px solid rgb(0, 191, 99);
+    border-top: 2px solid rgb(0, 190, 47);
     color: #FFFFFF;
 
 }

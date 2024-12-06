@@ -43,30 +43,53 @@
 
                 <div class="list-group">
 
-                        <div id="posts-container">
+                    <div id="posts-container">
                             
-                            <?php foreach ($posts as $post): ?>
+                        <?php foreach ($posts as $post): ?>
 
-                                <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3">
+                            <a href="<?= $BASE_URL ?>full-post.php?id=<?= $post["id"] ?>" class="list-group-item list-group-item-action d-flex gap-3 py-3">
 
-                                    <img src="<?= $BASE_URL ?>img/profile.png" alt="Perfil" class="rounded-circle flex-shrink-0" id="profile-icon">
+                                <img src="<?= $BASE_URL ?>img/profile.png" alt="Perfil" class="rounded-circle flex-shrink-0" id="profile-icon">
 
-                                    <h6 class="mb-0" id="post-uname"><?= $post["username"] ?></h6>
-                                    <p class="mb-0 opacity-75" id="post-content"><?= $post["content"] ?></p>
+                                <h6 class="mb-0" id="post-uname"><?= $post["username"] ?></h6>
+                                <p class="mb-0 opacity-75" id="post-content"><?= $post["content"] ?></p>
 
-                                </a>
+                            </a>
 
-                            <?php endforeach; ?>
+                        <?php endforeach; ?>
 
-                        </div>
-
-                    </a>
+                    </div>
 
                 </div>
 
             </div>
 
         <?php else: ?>
+
+            <div class="send-post-container">
+
+                <form id="send-post" action="<?php $BASE_URL ?>config/process.php" method="POST">
+
+                    <input type="hidden" name="type" value="create">
+
+                    <div class="send-section">
+
+                        <label for="uname" class="send-label" id="user-label">Nome de usuário:</label>
+                        <input class="send-box" id="uname" name="username" placeholder="Insira seu nome de usuário" required autocomplete="username">
+
+                    </div>
+
+                    <div class="send-section">
+
+                        <label for="ctnt" class="send-label">Escreva sua postagem:</label>
+                        <input class="send-box" id="ctnt" name="content" placeholder="Escreva sua postagem" required autocomplete="off">
+                        <button type="submit" id="send-submit"><i class="fa-solid fa-paper-plane"></i></button>
+
+                    </div>
+
+                </form>
+
+            </div>
 
             <div class="empty-list-container">
 

@@ -46,18 +46,47 @@
 
         header("location:" . $BASE_URL . "../index.php");
 
+    } else {
+
+        $id;
+
+        if (!empty($_GET)) {
+        $id = $_GET["id"];
+
     }
 
-    // Display posts
+    // Returns the full post
 
-    $posts = [];
+        if (!empty($id)) {
 
-    $query = "SELECT * FROM post";
+            $query = "SELECT * FROM post WHERE id = :id";
 
-    $stmt = $conn->prepare($query);
-    $stmt->execute();
+            $stmt = $conn->prepare($query);
 
-    $posts = $stmt->fetchAll();
+            $stmt->bindParam(":id", $id);
+
+            $stmt->execute();
+
+            $contact = $stmt->fetch();
+
+        } else {
+
+            // Display all posts
+
+            $posts = [];
+
+            $query = "SELECT * FROM post";
+
+            $stmt = $conn->prepare($query);
+            $stmt->execute();
+
+            $posts = $stmt->fetchAll();
+
+        }
+    
+    }
+
+    // Connection Close
 
     $conn = null;
 
