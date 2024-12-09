@@ -150,6 +150,12 @@ main {
 
 }
 
+#single-post-container {
+
+    height: 20%;
+
+}
+
 #posts-container a{
 
     flex-direction: column;
