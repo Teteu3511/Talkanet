@@ -197,6 +197,55 @@ main {
 
 }
 
+.help-center {
+
+    text-align: center;
+    padding: 60px;
+
+
+}
+
+.faq-section {
+
+    max-width: 800px;
+    margin: 0 auto;
+
+}
+
+.faq-item {
+
+    margin: 30px 0;
+
+}
+
+.faq-item button {
+
+    width: 100%;
+    padding: 20px;
+    background: rgb(0, 190, 47);
+    color: #fff;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    font-size: 18px;
+
+}
+
+.faq-item button:hover {
+
+    background: rgb(0, 190, 47);
+
+}
+
+.faq-item .content {
+
+    display: none;
+    padding: 20px;
+    background: rgb(33, 37, 41);
+    border: 1px solid #ddd;
+
+}
+
 .footer-container {
 
     width: 100%;
