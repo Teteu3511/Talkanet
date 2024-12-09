@@ -1,7 +1,5 @@
 <?php
 
-    session_start();
-
     include_once("connection.php");
     include_once("url.php");
 
@@ -11,24 +9,24 @@
 
     if (!empty($data)) {
 
-    // Create post
+        // Create comment
 
         if ($data["type"] === "create") {
 
             $uname = $data["username"];
-            $content = $data["content"];
+            $comment = $data["comment"];
 
-            $query = "INSERT INTO post (username, content) VALUES (:username, :content)";
+            $query = "INSERT INTO comments (username, comment) VALUES (:username, :comment)";
 
             $stmt = $conn->prepare($query);
 
             $stmt->bindParam(":username", $uname);
-            $stmt->bindParam(":content", $content);
+            $stmt->bindParam(":comment", $comment);
 
             try {
 
                 $stmt->execute();
-                $_SESSION["msg"] = "Postagem adicionada!";
+                $_SESSION["msg"] = "Comentário adicionado!";
 
             } catch(PDOException $e) {
 
@@ -44,7 +42,7 @@
 
         // Redirect to Home
 
-        header("location:" . $BASE_URL . "../index.php");
+        header("location:" . $BASE_URL . "../full-post.php");
 
     } else {
 
@@ -59,7 +57,7 @@
 
         if (!empty($id)) {
 
-            $query = "SELECT * FROM post WHERE id = :id";
+            $query = "SELECT * FROM comments WHERE id = :id";
 
             $stmt = $conn->prepare($query);
 
@@ -67,21 +65,21 @@
 
             $stmt->execute();
 
-            $post = $stmt->fetch();
+            $comment = $stmt->fetch();
 
         } else {
 
             // Display all posts
 
-            $posts = [];
+            $comments = [];
 
-            $query = "SELECT * FROM post";
+            $query = "SELECT * FROM comments";
 
             $stmt = $conn->prepare($query);
             
             $stmt->execute();
 
-            $posts = $stmt->fetchAll();
+            $comments = $stmt->fetchAll();
 
         }
     
