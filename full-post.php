@@ -14,22 +14,6 @@
 
     <main>
 
-    <script type="text/javascript">
-
-        if (user hits the submit button) {
-            const uname = document.getElementById("uname")
-            const comment = document.getElementById("cmmt")
-            
-            //Happens in Background
-            CallPage("comment_process.php?uname=" + uname + "&comment=" + comment);
-            
-            //User sees this...
-            Remove(form)
-            Display("Thank you for your comment.")
-        }
-
-    </script>
-
         <?php include_once("templates/backbtn.html"); ?>
 
         <div class="d-flex flex-column flex-md-row gap-4 align-items-center justify-content-center">
@@ -54,7 +38,8 @@
 
             <form id="send-comment" action="<?php $BASE_URL ?>config/process.php" method="POST">
 
-                <input type="hidden" name="type" value="create">
+                <input type="hidden" name="type" value="comment">
+                <input type="hidden" name="post_id" value="<?= $id ?>">
 
                 <div class="send-section">
 
@@ -66,7 +51,7 @@
                 <div class="send-section">
 
                     <label for="ctnt" class="send-label">Escreva seu comentário:</label>
-                    <input class="send-box" id="cmmt" name="content" placeholder="Escreva sua postagem" required autocomplete="off">
+                    <input class="send-box" id="cmmt" name="comment" placeholder="Escreva seu comentário" required autocomplete="off">
                     <button type="submit" id="send-submit"><i class="fa-solid fa-paper-plane"></i></button>
 
                 </div>
@@ -74,6 +59,40 @@
             </form>
 
         </div>
+
+        <?php if(count($comments) > 0): ?>
+
+            <div class="d-flex flex-column flex-md-row gap-4 align-items-center justify-content-center">
+
+                <div class="list-group">
+
+                    <div id="posts-container">
+
+                        <?php foreach ($comments as $comment): ?>
+            
+                            <img src="<?= $BASE_URL ?>img/profile.png" alt="Perfil" class="rounded-circle flex-shrink-0" id="profile-icon">
+
+                            <h1 id="main-title"><?= $comment["username"] ?></h1>
+
+                            <p><?= $comment["comment"] ?></p>
+
+                        <?php endforeach; ?>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        <?php else: ?>
+
+            <div class="empty-list-container">
+
+                <p id="empty-list-text">Tudo vazio por aqui, Seja o primeiro a postar algo.</p>
+
+            </div>
+
+        <?php endif; ?>
 
     </main>
 
