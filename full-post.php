@@ -32,7 +32,7 @@
 
                 </div>
 
-                <h5 id="commentsTitle">Comentários</h2>
+                <h5 id="commentsTitle">Comentários</h5>
 
                 <form id="send-comment" action="<?php $BASE_URL ?>config/process.php" method="POST">
 
