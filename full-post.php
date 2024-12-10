@@ -18,9 +18,9 @@
 
         <div class="d-flex flex-column flex-md-row gap-4 align-items-center justify-content-center">
 
-            <div class="list-group">
+            <div class="post-list-group">
 
-                <div id="single-post-container" class="list-group-item d-flex flex-md-column gap-3 py-3">
+                <div id="single-post-container" class="list-group-item d-flex flex-md-column gap-2 py-2">
                         
                     <img src="<?= $BASE_URL ?>img/profile.png" alt="Perfil" class="rounded-circle flex-shrink-0" id="profile-icon">
 
@@ -28,22 +28,25 @@
 
                     <p><?= $post["content"] ?></p>
 
+                    <hr>
 
                 </div>
+
+                <h5 id="commentsTitle">Comentários</h2>
 
                 <form id="send-comment" action="<?php $BASE_URL ?>config/process.php" method="POST">
 
                     <input type="hidden" name="type" value="comment">
                     <input type="hidden" name="post_id" value="<?= $id ?>">
 
-                    <div class="send-section">
+                    <div class="send-comment-section">
 
                         <label for="uname" class="send-label" id="user-label">Nome de usuário:</label>
                         <input class="send-box" id="uname" name="username" placeholder="Insira seu nome de usuário" required autocomplete="username">
 
                     </div>
 
-                    <div class="send-section">
+                    <div class="send-comment-section">
 
                         <label for="ctnt" class="send-label">Escreva seu comentário:</label>
                         <input class="send-box" id="cmmt" name="comment" placeholder="Escreva seu comentário" required autocomplete="off">
@@ -57,15 +60,13 @@
 
         </div>
 
-
-
         <?php if(count($comments) > 0): ?>
 
             <div class="d-flex flex-column flex-md-row gap-4 align-items-center justify-content-center">
 
-                <div class="list-group">
+                <div class="comment-list-group">
 
-                    <div id="single-post-container" class="list-group-item d-flex flex-md-column gap-3 py-3">
+                    <div id="single-comment-container" class="list-group-item d-flex flex-md-column gap-1 py-1">
 
                         <?php foreach ($comments as $comment): ?>
             
