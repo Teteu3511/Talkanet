@@ -32,29 +32,21 @@
 
                 </div>
 
-                <h5 id="commentsTitle">Comentários</h5>
+                <h5 id="sendCommentsTitle">Comentar nesta postagem</h5>
 
                 <form id="send-comment" action="<?php $BASE_URL ?>config/process.php" method="POST">
 
                     <input type="hidden" name="type" value="comment">
                     <input type="hidden" name="post_id" value="<?= $id ?>">
 
-                    <div class="send-comment-section">
+                    <input class="send-box" id="uname" name="username" placeholder="Insira seu nome de usuário" required autocomplete="username">
 
-                        <label for="uname" class="send-label" id="user-label">Nome de usuário:</label>
-                        <input class="send-box" id="uname" name="username" placeholder="Insira seu nome de usuário" required autocomplete="username">
-
-                    </div>
-
-                    <div class="send-comment-section">
-
-                        <label for="ctnt" class="send-label">Escreva seu comentário:</label>
-                        <input class="send-box" id="cmmt" name="comment" placeholder="Escreva seu comentário" required autocomplete="off">
-                        <button type="submit" id="send-submit"><i class="fa-solid fa-paper-plane"></i></button>
-
-                    </div>
+                    <input class="send-box" id="cmmt" name="comment" placeholder="Escreva seu comentário" required autocomplete="off">
+                    <button type="submit" id="send-submit"><i class="fa-solid fa-paper-plane"></i></button>
 
                 </form>
+
+                <h5 id="commentsTitle">Comentários</h5>
 
             </div>
 

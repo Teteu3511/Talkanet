@@ -105,35 +105,6 @@ main {
 
 }
 
-.send-comment-section {
-
-    border: 2px solid rgb(107, 109, 107);
-    border-radius: 15px;
-    background-color: rgb(44, 44, 44);
-    margin: 10px auto;
-    width: 100%;
-    padding: 5px;
-
-}
-
-.send-section {
-
-    border: 2px solid rgb(0, 190, 47);
-    border-top-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    margin: 15px auto;
-    width: 100%;
-    padding: 10px;
-
-}
-
-.send-section #user-label {
-
-
-    font-size: 20px;
-
-}
-
 .send-label {
 
     margin-right: 20px;
@@ -142,18 +113,24 @@ main {
 
 .send-box {
 
-    width: 60%;
+    width: 100%;
     padding: 5px;
-    background-color: rgb(9, 11, 10);
+    background-color: rgb(35, 36, 36);
     border: 1px solid rgb(0, 190, 47);
     border-radius: 10px;
-    margin-right: 20px;
+    margin-bottom: 8px;
+
+}
+
+#ctnt {
+
+    width: 80%;
 
 }
 
 #send-submit {
 
-    background: none;
+    background-color: rgb(35, 36, 36);
     color: rgb(0, 190, 47);
     border: 1px solid rgb(0, 190, 47);
     border-radius: 10px;
@@ -200,9 +177,15 @@ main {
 
 }
 
+#sendCommentsTitle {
+
+    margin-bottom: 20px;
+
+}
+
 #commentsTitle {
 
-    padding: 0 0 10px 0;
+    margin-top: 30px;
 
 }
 

@@ -16,28 +16,20 @@
 
             <div class="send-post-container">
 
-            <form id="send-post" action="<?php $BASE_URL ?>config/process.php" method="POST">
+                <h5 id="sendPostTitle">Criar uma postagem</h5>
 
-                <input type="hidden" name="type" value="create">
+                <form id="send-post" action="<?php $BASE_URL ?>config/process.php" method="POST">
 
-                <div class="send-section">
+                    <input type="hidden" name="type" value="create">
 
-                    <label for="uname" class="send-label" id="user-label">Nome de usuário:</label>
                     <input class="send-box" id="uname" name="username" placeholder="Insira seu nome de usuário" required autocomplete="username">
 
-                </div>
-
-                <div class="send-section">
-
-                    <label for="ctnt" class="send-label">Escreva sua postagem:</label>
                     <input class="send-box" id="ctnt" name="content" placeholder="Escreva sua postagem" required autocomplete="off">
                     <button type="submit" id="send-submit"><i class="fa-solid fa-paper-plane"></i></button>
 
-                </div>
+                </form>
 
-            </form>
-
-        </div>
+            </div>
 
             <div class="d-flex flex-column flex-md-row gap-4 align-items-center justify-content-center">
 
