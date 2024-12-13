@@ -14,6 +14,8 @@
 
     <main>
 
+        <script type="text/javascript" src="<?= $BASE_URL ?>heartClicked.js"></script>
+
         <?php include_once("templates/backbtn.html"); ?>
 
         <div class="d-flex flex-column flex-md-row gap-4 align-items-center justify-content-center">
@@ -27,6 +29,14 @@
                     <h1 id="main-title"><?= $post["username"] ?></h1>
 
                     <p><?= $post["content"] ?></p>
+
+                    <div class="actions">
+
+                        <button onclick="heartClicked()" class="action-button" id="heart"><i class="fa-solid fa-heart"></i></button>
+
+                        <span class="action-button"><i class="fa-solid fa-share" id="share"></i></span>
+
+                    </div>
 
                     <hr>
 
@@ -67,6 +77,14 @@
                             <h1 id="main-title"><?= $comment["username"] ?></h1>
 
                             <p><?= $comment["comment"] ?></p>
+
+                            <div class="actions">
+
+                                <button onclick="heartClicked()" class="action-button" id="heart"><i class="fa-solid fa-heart"></i></button>
+
+                                <span class="action-button"><i class="fa-solid fa-share" id="share"></i></span>
+
+                            </div>
 
                             <hr>
 

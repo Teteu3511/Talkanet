@@ -6,6 +6,8 @@
 
     <main>
 
+        <script type="text/javascript" src="<?= $BASE_URL ?>heartClicked.js"></script>
+
         <?php if(isset($printMsg) && $printMsg != ''): ?>
 
             <p id="msg"><?php $printMsg ?></p>
@@ -39,14 +41,28 @@
                             
                         <?php foreach ($posts as $post): ?>
 
-                            <a href="<?= $BASE_URL ?>full-post.php?id=<?= $post["id"] ?>" class="list-group-item list-group-item-action d-flex gap-3 py-3">
+                            <div class="list-group-item d-flex flex-md-column gap-3 py-3" id="single-post">
 
                                 <img src="<?= $BASE_URL ?>img/profile.png" alt="Perfil" class="rounded-circle flex-shrink-0" id="profile-icon">
 
                                 <h6 class="mb-0" id="post-uname"><?= $post["username"] ?></h6>
                                 <p class="mb-0 opacity-75" id="post-content"><?= $post["content"] ?></p>
 
-                            </a>
+                                <div class="actions">
+
+                                    <button onclick="heartClicked()" class="action-button" id="heart"><i class="fa-solid fa-heart"></i></button>
+
+                                    <a href="<?= $BASE_URL ?>full-post.php?id=<?= $post["id"] ?>" class="action-button" id="comments">
+
+                                        <i class="fa-solid fa-comment"></i>
+
+                                    </a>
+
+                                    <span class="action-button"><i class="fa-solid fa-share" id="share"></i></span>
+
+                                </div>
+
+                            </div>
 
                         <?php endforeach; ?>
 
