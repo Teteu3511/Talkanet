@@ -17,13 +17,15 @@
 
             $uname = $data["username"];
             $content = $data["content"];
+            $img_url = isset($data['img_url']) ? $data['img_url'] : '';
 
-            $query = "INSERT INTO post (username, content) VALUES (:username, :content)";
+            $query = "INSERT INTO post (username, content, img_url) VALUES (:username, :content, :img_url)";
 
             $stmt = $conn->prepare($query);
 
             $stmt->bindParam(":username", $uname);
             $stmt->bindParam(":content", $content);
+            $stmt->bindParam(":img_url", $img_url);
 
             try {
 
@@ -50,14 +52,16 @@
             $post_id = $data["post_id"];
             $uname = $data["username"];
             $comment = $data["comment"];
+            $cmmnt_img_url = isset($data['cmmnt_img_url']) ? $data['cmmnt_img_url'] : '';
 
-            $query = "INSERT INTO comments (post_id, username, comment) VALUES (:post_id, :username, :comment)";
+            $query = "INSERT INTO comments (post_id, username, comment, cmmnt_img_url) VALUES (:post_id, :username, :comment, :cmmnt_img_url)";
 
             $stmt = $conn->prepare($query);
 
             $stmt->bindParam(":post_id", $post_id);
             $stmt->bindParam(":username", $uname);
             $stmt->bindParam(":comment", $comment);
+            $stmt->bindParam(":cmmnt_img_url", $cmmnt_img_url);
 
             try {
 

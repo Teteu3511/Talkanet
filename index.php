@@ -20,13 +20,15 @@
 
                 <h5 id="sendPostTitle">Criar uma postagem</h5>
 
-                <form id="send-post" action="<?php $BASE_URL ?>config/process.php" method="POST">
+                <form id="send-post" action="<?php $BASE_URL ?>config/process.php" method="post">
 
                     <input type="hidden" name="type" value="create">
 
-                    <input class="send-box" id="uname" name="username" placeholder="Insira seu nome de usuário" required autocomplete="username">
+                    <input type="text" class="send-box" id="uname" name="username" placeholder="Insira seu nome de usuário" required autocomplete="username">
 
-                    <input class="send-box" id="ctnt" name="content" placeholder="Escreva sua postagem" required autocomplete="off">
+                    <input type="text" class="send-box" id="ctnt" name="content" placeholder="Escreva sua postagem" required autocomplete="off">
+
+                    <input type="url" class="send-box" id="img" name="img_url" placeholder="(opcional) Url da imagem">
                     <button type="submit" id="send-submit"><i class="fa-solid fa-paper-plane"></i></button>
 
                 </form>
@@ -47,6 +49,7 @@
 
                                 <h6 class="mb-0" id="post-uname"><?= $post["username"] ?></h6>
                                 <p class="mb-0 opacity-75" id="post-content"><?= $post["content"] ?></p>
+                                <img src="<?= $post["img_url"] ?>" id="post_img">
 
                                 <div class="actions">
 
@@ -76,24 +79,18 @@
 
             <div class="send-post-container">
 
+                <h5 id="sendPostTitle">Criar uma postagem</h5>
+
                 <form id="send-post" action="<?php $BASE_URL ?>config/process.php" method="POST">
 
                     <input type="hidden" name="type" value="create">
 
-                    <div class="send-section">
+                    <input class="send-box" id="uname" name="username" placeholder="Insira seu nome de usuário" required autocomplete="username">
 
-                        <label for="uname" class="send-label" id="user-label">Nome de usuário:</label>
-                        <input class="send-box" id="uname" name="username" placeholder="Insira seu nome de usuário" required autocomplete="username">
+                    <input class="send-box" id="ctnt" name="content" placeholder="Escreva sua postagem" required autocomplete="off">
 
-                    </div>
-
-                    <div class="send-section">
-
-                        <label for="ctnt" class="send-label">Escreva sua postagem:</label>
-                        <input class="send-box" id="ctnt" name="content" placeholder="Escreva sua postagem" required autocomplete="off">
-                        <button type="submit" id="send-submit"><i class="fa-solid fa-paper-plane"></i></button>
-
-                    </div>
+                    <input class="send-box" id="img_url" name="img_url" placeholder="(opcional) Url da imagem" autocomplete="off">
+                    <button type="submit" id="send-submit"><i class="fa-solid fa-paper-plane"></i></button>
 
                 </form>
 

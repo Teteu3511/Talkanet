@@ -30,6 +30,8 @@
 
                     <p><?= $post["content"] ?></p>
 
+                    <img src="<?= $post["img_url"] ?>" id="post_img">
+
                     <div class="actions">
 
                         <button onclick="heartClicked()" class="action-button" id="heart"><i class="fa-solid fa-heart"></i></button>
@@ -52,6 +54,8 @@
                     <input class="send-box" id="uname" name="username" placeholder="Insira seu nome de usuário" required autocomplete="username">
 
                     <input class="send-box" id="cmmt" name="comment" placeholder="Escreva seu comentário" required autocomplete="off">
+
+                    <input type="url" class="send-box" id="cmmtImg" name="cmmnt_img_url" placeholder="(opcional) Url da imagem">
                     <button type="submit" id="send-submit"><i class="fa-solid fa-paper-plane"></i></button>
 
                 </form>
@@ -77,6 +81,8 @@
                             <h1 id="main-title"><?= $comment["username"] ?></h1>
 
                             <p><?= $comment["comment"] ?></p>
+
+                            <img src="<?= $comment["cmmnt_img_url"] ?>" id="cmmnt_img">
 
                             <div class="actions">
 
