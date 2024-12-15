@@ -128,7 +128,7 @@ main {
 
 }
 
-#ctnt {
+#postImg, #cmmntImg {
 
     width: 80%;
 
@@ -190,12 +190,6 @@ main {
 
 }
 
-#cmmt {
-
-    width: 80%;
-
-}
-
 #commentsTitle {
 
     margin-top: 30px;
@@ -253,6 +247,13 @@ main {
 #post-content {
 
     font-size: 17px;
+
+}
+
+#post_img, #cmmnt_img {
+
+    align-self: center;
+    width: 60%;
 
 }
 

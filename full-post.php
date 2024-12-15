@@ -30,7 +30,7 @@
 
                     <p><?= $post["content"] ?></p>
 
-                    <img src="<?= $post["img_url"] ?>" id="post_img">
+                    <img src="<?= $post["img_url"] ?>" id="cmmnt_img">
 
                     <div class="actions">
 
@@ -55,7 +55,7 @@
 
                     <input class="send-box" id="cmmt" name="comment" placeholder="Escreva seu comentário" required autocomplete="off">
 
-                    <input type="url" class="send-box" id="cmmtImg" name="cmmnt_img_url" placeholder="(opcional) Url da imagem">
+                    <input type="url" class="send-box" id="cmmntImg" name="cmmnt_img_url" placeholder="(opcional) Url da imagem">
                     <button type="submit" id="send-submit"><i class="fa-solid fa-paper-plane"></i></button>
 
                 </form>

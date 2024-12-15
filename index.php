@@ -28,7 +28,7 @@
 
                     <input type="text" class="send-box" id="ctnt" name="content" placeholder="Escreva sua postagem" required autocomplete="off">
 
-                    <input type="url" class="send-box" id="img" name="img_url" placeholder="(opcional) Url da imagem">
+                    <input type="url" class="send-box" id="postImg" name="img_url" placeholder="(opcional) Url da imagem">
                     <button type="submit" id="send-submit"><i class="fa-solid fa-paper-plane"></i></button>
 
                 </form>
@@ -89,7 +89,7 @@
 
                     <input class="send-box" id="ctnt" name="content" placeholder="Escreva sua postagem" required autocomplete="off">
 
-                    <input class="send-box" id="img_url" name="img_url" placeholder="(opcional) Url da imagem" autocomplete="off">
+                    <input class="send-box" id="postImg" name="img_url" placeholder="(opcional) Url da imagem" autocomplete="off">
                     <button type="submit" id="send-submit"><i class="fa-solid fa-paper-plane"></i></button>
 
                 </form>
