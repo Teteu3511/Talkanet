@@ -365,3 +365,37 @@ footer p {
     text-align: center;
 
 }
+
+@media screen and (max-width: 500px) {
+
+    #ctnt {
+
+        width: 65%;
+
+    }
+
+    #send-submit {
+
+        width: 30%;
+
+    }
+
+    #single-post {
+
+        flex-direction: column;
+
+    }
+
+    #single-post-container, #single-comment-container {
+
+        flex-direction: column;
+
+    }
+
+    .send-post-container, .list-group, .post-list-group, .comment-list-group {
+
+        width: 100%;
+
+    }
+    
+}
