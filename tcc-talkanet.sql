@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 15/12/2024 às 20:38
+-- Tempo de geração: 15/12/2024 às 20:40
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.2.12
 
@@ -35,13 +35,6 @@ CREATE TABLE `comments` (
   `cmmnt_img_url` varchar(500) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
---
--- Despejando dados para a tabela `comments`
---
-
-INSERT INTO `comments` (`id`, `post_id`, `username`, `comment`, `cmmnt_img_url`) VALUES
-(33, 53, 'kehhkreere', 'dehweihdukwd', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV3y0FKLcVkBWWyL0IcAZr81Mk3MrKf53Y1A&s');
-
 -- --------------------------------------------------------
 
 --
@@ -54,13 +47,6 @@ CREATE TABLE `post` (
   `content` varchar(500) DEFAULT NULL,
   `img_url` varchar(500) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Despejando dados para a tabela `post`
---
-
-INSERT INTO `post` (`id`, `username`, `content`, `img_url`) VALUES
-(53, 'iduiehfielr', 'roefoejfioefio', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV3y0FKLcVkBWWyL0IcAZr81Mk3MrKf53Y1A&s');
 
 --
 -- Índices para tabelas despejadas
