@@ -1,2 +1,2 @@
-# Site de Conversa
-Um site com login para conversar com usuários
+# Talkanet 1.0
+Um site feito em HTML, CSS, JavaScript e PHP que contém um sistema de posts.
