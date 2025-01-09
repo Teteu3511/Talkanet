@@ -23,7 +23,10 @@
 		<title>Talkanet - Seu Lugar para Trovar</title>
         <link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/style.css">
-		<link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+		<link rel="manifest" href="favicon/site.webmanifest">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Syne+Mono&family=Workbench&display=swap" rel="stylesheet">
@@ -40,7 +43,7 @@
 			<section class="header-wrapper">
 				<header class="d-flex flex-wrap justify-content-center py-3" id="header">
 					<div class="logo">
-						<a href="./" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+						<a href="./" class="mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
 							<img src="img/Talka.png" width="200px"></img>
 						</a>
 					</div>

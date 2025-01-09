@@ -42,9 +42,9 @@
 
             }
 
-            // Redirect to Home
+            // Redirect to Chat
 
-            header("location:" . $BASE_URL . "../index.php");
+            header("location:" . $BASE_URL . "../chat.php");
 
         
         } elseif ($data["type"] === "comment") {
@@ -114,7 +114,7 @@
 
             $posts = [];
 
-            $query = "SELECT * FROM post";
+            $query = "SELECT * FROM post ORDER BY id DESC";
 
             $stmt = $conn->prepare($query);
             
@@ -126,7 +126,7 @@
 
         // Displays corresponding comments
 
-        $query = "SELECT * FROM comments WHERE post_id = :id";
+        $query = "SELECT * FROM comments WHERE post_id = :id ORDER BY id DESC";
                     
         $stmt = $conn->prepare($query);
 

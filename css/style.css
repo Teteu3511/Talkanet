@@ -1,29 +1,27 @@
-.page-control {
+body {
+    
+    padding-top: 70px;
 
+}
+
+.page-control {
+    
     min-height: 100vh;
     margin: 0;
     background-color: rgb(9, 11, 10);
 
 }
 
-.header-wrapper {
-
-    width: 100%;
-
-}
-
 #header {
 
-    min-height: 50px;
+    min-height: 80px;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    z-index: 1000;
     border-bottom: 2px solid rgb(0, 190, 47);
     background-color: rgb(9, 11, 10);
     font-size: 21px;
-
-}
-
-.logo {
-
-    width: 250px;
 
 }
 
@@ -32,13 +30,15 @@
     margin: auto 30px;
     border: 2px solid rgb(0, 190, 47);
     border-radius: 10px;
-    width: 500px;
+    min-width: 350px;
+    max-width: 350px;
 
 }
 
 #navbar a {
 
     color: rgb(0, 190, 47);
+    padding: 0 10px;
 
 }
 
@@ -52,6 +52,7 @@
 #navbar i {
 
     margin: 7px;
+    
 }
 
 .text {
